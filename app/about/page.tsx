@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { about } from "@/assets/img/index"
 import { useRouter } from 'next/router';
 
-const page : React.FC= () => {
+const Page : React.FC= () => {
   const router = useRouter();
   return (
     <div className='text-white flex gap-16 mt-40'>
@@ -33,4 +33,4 @@ const page : React.FC= () => {
   )
 }
 
-export default page
+export default Page
