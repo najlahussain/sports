@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { about } from "@/assets/img/index"
 import { useRouter } from 'next/navigation';
 
-const page = () => {
+const page : React.FC= () => {
   const router = useRouter();
   return (
     <div className='text-white flex gap-16 mt-40'>
