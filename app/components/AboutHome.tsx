@@ -24,7 +24,7 @@ const AboutHome = () => {
         <h2 className='text-[45px] font-[800] leading-normal'>We&apos;re Top Notch & Best</h2>
         <h2 className='text-[45px] text-[#42FB14] font-[800] leading-normal'>FITNESS AND RECREATIONAL</h2>
         <h2 className='text-[45px] font-[800] leading-normal'>CENTER</h2>
-        <p className='text-[16px] font-[500] leading-normal'>The Sports Pavilion is a cutting-edge fitness and recreational center that offers something for everyone. It is a destination that combines relaxation, fitness, and entertainment, making it an all-in-one hub for recreation. The Sports Pavilion offers a vast array of facilities, including a gym, salon and spa, skating rink, volleyball area, basketball court, indoor PC and PS4 gaming, soft play area, snooker area, and a bowling alley. Whether you're looking to unwind, exercise, or have fun, the Sports Pavilion has it all.</p>
+        <p className='text-[16px] font-[500] leading-normal'>The Sports Pavilion is a cutting-edge fitness and recreational center that offers something for everyone. It is a destination that combines relaxation, fitness, and entertainment, making it an all-in-one hub for recreation. The Sports Pavilion offers a vast array of facilities, including a gym, salon and spa, skating rink, volleyball area, basketball court, indoor PC and PS4 gaming, soft play area, snooker area, and a bowling alley. Whether you&apos;re looking to unwind, exercise, or have fun, the Sports Pavilion has it all.</p>
         <button type = 'button' 
           onClick={() => router.push('/about')}
           className='w-[187px] h-[57px] text-black font-bold bg-[#42FB14] mt-5 rounded-md'>Discover More</button>
