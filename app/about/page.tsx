@@ -3,7 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { about } from "@/assets/img/index"
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 
 const page : React.FC= () => {
   const router = useRouter();
