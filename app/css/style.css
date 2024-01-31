@@ -1,0 +1,51 @@
+@keyframes arrow-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.rotate{ 
+    animation: arrow-spin 3s linear infinite;
+}
+
+.animated-text {
+  //overflow: hidden;
+  white-space: nowrap;
+  animation: moveLeftToRight 20s linear infinite; /* Adjust the duration as needed */
+  animation-fill-mode: forwards;
+  display: inline-block; /* Ensure the container expands to fit the content */
+  max-width: 100%; /* Allow the container to take up the full width of its parent */
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-100%);
+    //opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    //opacity: 1;
+  }
+}
+
+.box {
+  height: 400px;
+  overflow: hidden;
+  border: 1px solid red;
+  background: #ff0;
+}
+.hid-box {
+  top: 100%;
+  position: relative;
+  transition: all .5s ease-out;
+  background: #428bca;
+  height: 100%;
+}
+
+.box:hover > .hid-box{
+  top: 0;
+}
+
+export {styles};
