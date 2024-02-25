@@ -1,9 +1,11 @@
 import { bg_facilities, bulb } from "@/assets/img";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 type cardData = {
+    id: string,
     title: string,
-    text : string
+    text : string,
+    //image : StaticImageData,
 }
 const Card = (data: cardData) => {
   return (
@@ -11,7 +13,7 @@ const Card = (data: cardData) => {
     <div className="flex items-center justify-center">
       <div className="box bg-[#101010] opacity-90 z-10 h-[76px] w-[360px] flex items-center flex-col absolute top-[204px]">
           <h1 className="text-white pt-5 font-extrabold box">{data.title}</h1>
-          <div className="hid-box bg-gray-700 opacity-50 z-10 h-[70px] w-fit flex items-center">
+          <div className="hid-box bg-[#101010] opacity-90 z-10 h-[150px] w-fit flex items-center">
             <p>{data.text}</p>
           </div>    
       </div>

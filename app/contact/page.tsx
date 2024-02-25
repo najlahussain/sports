@@ -1,8 +1,13 @@
 import React from 'react'
+import { Visit, Contact, Location } from '../components/ContactUs/index'
 
 const page = () => {
   return (
-    <div className='text-white'>Contact</div>
+    <div className=''>
+      <Contact />
+      <Visit />
+      <Location />
+    </div>
   )
 }
 
