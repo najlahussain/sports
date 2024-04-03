@@ -1,64 +1,72 @@
-html {
-  @apply overflow-x-hidden;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@keyframes arrow-spin {
-    from {
-      transform: rotate(0deg);
+html {
+    @apply overflow-x-hidden;
+  }
+  
+  @keyframes arrow-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  .rotate{ 
+      animation: arrow-spin 3s linear infinite;
+  }
+  
+  .animated-text {
+    /* overflow: hidden; */
+    white-space: nowrap;
+    animation: moveLeftToRight 20s linear alternate infinite; /* Adjust the duration as needed */
+    animation-fill-mode: forwards;
+    display: inline-block; 
+    /* //Ensure the container expands to fit the content */
+    max-width: 100%; /* Allow the container to take up the full width of its parent */
+  }
+  
+  @keyframes moveLeftToRight {
+  from {
+      transform: translateX(0%);
+      //opacity: 0;
     }
     to {
-      transform: rotate(360deg);
+      transform: translateX(-100%);
+      //opacity: 1;
     }
   }
-.rotate{ 
-    animation: arrow-spin 3s linear infinite;
-}
-
-.animated-text {
-  /* overflow: hidden; */
-  white-space: nowrap;
-  animation: moveLeftToRight 20s linear alternate infinite; /* Adjust the duration as needed */
-  animation-fill-mode: forwards;
-  display: inline-block; 
-  /* //Ensure the container expands to fit the content */
-  max-width: 100%; /* Allow the container to take up the full width of its parent */
-}
-
-@keyframes moveLeftToRight {
-from {
-    transform: translateX(0%);
-    //opacity: 0;
+  
+  .box {
+    /* overflow: hidden; */
   }
-  to {
-    transform: translateX(-100%);
-    //opacity: 1;
+  .hid-box {
+    top: 100%;
+    position: relative;
+    transition: all .3s ease-in;
+    height: 100%;
   }
-}
-
-.box {
-  /* overflow: hidden; */
-}
-.hid-box {
-  top: 100%;
-  position: relative;
-  transition: all .3s ease-in;
-  height: 100%;
-}
-
-.box:hover > .hid-box{
-  top: 0;
-}
-
-.black-gradient {
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+  
+  .box:hover > .hid-box{
+    top: 0;
+  }
+  
+  .black-gradient {
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #434343,
+      #000000
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #434343,
+      #000000
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .transition-transform {
+    transition-property: transform;
+  }

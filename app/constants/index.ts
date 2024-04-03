@@ -1,5 +1,3 @@
-import { bg_facilities} from "@/assets/img";
-
 export const navLinks = [
     {
       id: "",
@@ -27,29 +25,67 @@ export const navLinks = [
     },
   ];
 
-  export const facilities_data = [
-    {
-      id : "gaming",
-      title : "GAMING GARAGE",
-      text : "Gaming garage facilities explained!! Gaming garage facilities explained!! Gaming garage facilities explained!!",
-      image : {bg_facilities},
-    },
-    {
-      id : "badminton",
-      title : "BADMINTON COURT",
-      text : "Badminton Court facilities explained!! Gaming garage facilities explained!! Gaming garage facilities explained!!",
-      image : {bg_facilities},
-    },
-    {
-      id : "tennis",
-      title : "TENNIS",
-      text : "Tennis facilities explained!! Gaming garage facilities explained!! Gaming garage facilities explained!!",
-      image : {bg_facilities},
-    },
-    {
-      id : "random",
-      title : "TENNIS",
-      text : "Tennis facilities explained!! Gaming garage facilities explained!! Gaming garage facilities explained!!",
-      image : {bg_facilities},
-    },
-  ];
+  export type FormData = {
+    title: string,
+    name?: string;
+    email: string;
+    phone?: string;
+    events?: string;
+    address?:string,
+    message?:string,
+    year?:string,
+  };
+
+  export type SanityData = {
+    image : any,
+    title?: string,
+    description?: string,
+    slug : any
+  }
+
+  export type AboutData = {
+    image : any,
+    sideImage: any,
+    description: string,
+    reviews: string,
+    customer:string
+  }
+
+  export type EventsData = {
+    image : any, 
+    description : string, 
+    galleryImage : any, 
+    test1Image : any, 
+    test1Name : string, 
+    test1desc : string,
+    test2Image : any,
+    test2Name : string,
+    test2desc : string,
+    test3Image : any,
+    test3Name : string,
+    test3desc : string,
+  }
+
+  export type SalonData = {
+    image : any, 
+    description : string, 
+    sideImage : any, 
+    services : string, 
+    spaText : string, 
+    spaImage1 : any,
+    spaImage2 : any,
+    spaImage3 : any,
+  }
+
+  export type ContactData = {
+    email : string,
+    phone : string,
+    sideImage : any,
+    bg : any
+  }
+
+  export type PicturesData = {
+    title: string,
+    image: any,
+    slug:any
+  }

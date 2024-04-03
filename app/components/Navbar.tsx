@@ -15,7 +15,7 @@ const Navbar = () => {
       <ul className="hidden sm:flex list-disc gap-32 items-center">
         <li><Link href="/">Home</Link></li>
         <li><Link href="/about">About</Link></li>
-        <li><Link href="/events">Events</Link></li>
+        <li><Link href="/events1">Events</Link></li>
       </ul>
       <div className="w-[130px] sm:w-[230px] h-[100px] sm:h-[131px]">
         <Image src={logo} alt="logo"></Image>

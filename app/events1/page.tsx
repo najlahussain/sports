@@ -1,18 +1,34 @@
 import React from 'react'
-import EventsCard from '../components/EventsCard';
+import { EventsHero, EventsText, EventsGallery, EventsTestimonials, EventsAppointment, EventSlider} from '../components/Events';
+import { client } from '@/sanity/lib/client';
+import { EventsData, PicturesData } from '../constants';
+export const revalidate = 60
 
-const page = () => {
+
+async function page () {
+
+  const query = `*[_type=='eventspage']{
+    image, description, galleryImage, test1Image, test1Name, test1desc,
+      test2Image, test2Name, test2desc,
+      test3Image, test3Name, test3desc,
+  }`;
+
+  const query1 = `*[_type=='pictures']{
+    image, title, slug
+  }`;
+
+  const eventsdata:EventsData[] = await client.fetch(query);
+  const pictures:PicturesData[] = await client.fetch(query1);
+  // console.log(pictures);
   return (
-    <div className='text-white flex flex-col items-center justify-center mt-20'>
-      <div className='w-[8px] h-[8px] bg-[#F92B50] rounded-full'></div>
-      <h3 className="mt-5 text-[14px] font-[500] leading-normal">WHAT WE&apos;RE OFFERING</h3>
-      <h1 className='text-[#F92B50]  text-[44px] sm:text-[50px] font-[800] leading-normal'>EVENTS<span className='text-white'>&nbsp;ORGANIZED</span></h1>
-      <div className='flex flex-col sm:flex-row gap-[20px] sm:gap-[40px]'>
-        <EventsCard date = "29 Aug" title = "GAME NIGHT"/>
-        <EventsCard date = "29 Aug" title = "MOVIE NIGHT"/>
-        <EventsCard date = "29 Aug" title = "CORPORATE EVENTS"/>
-      </div>
-    </div>
+   <div>
+      <EventsHero data = {eventsdata}/>
+      <EventsText data = {eventsdata}/>
+      <EventSlider data = {pictures}/>
+      <EventsGallery data = {eventsdata}/>
+      <EventsTestimonials data = {eventsdata}/>
+      <EventsAppointment />
+   </div>
   )
 }
 

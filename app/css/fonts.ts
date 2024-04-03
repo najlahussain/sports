@@ -1,4 +1,4 @@
-import { Goblin_One, Archivo_Black, Revalia, Poppins, Plus_Jakarta_Sans } from 'next/font/google'
+import { Goblin_One, Archivo_Black, Revalia, Poppins, Plus_Jakarta_Sans, Cormorant } from 'next/font/google'
 
 const goblin = Goblin_One<undefined>({
     weight: '400',
@@ -25,4 +25,9 @@ const archivo = Archivo_Black({
     subsets : ["latin"]
   })
 
-export { goblin, archivo, revalia, poppins, jakarta};
+  const cormorant = Cormorant({
+    weight : "500",
+    subsets : ["latin"]
+  })
+
+export { goblin, archivo, revalia, poppins, jakarta, cormorant};
