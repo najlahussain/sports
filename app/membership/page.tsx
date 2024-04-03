@@ -7,9 +7,9 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import { sendEmail } from '@/utils/send-email';
 import { FormData } from '@/app/constants';
 
-export const getYear = (year:string) => {
-  console.log("Year: ",year);
-}
+// export const getYear = (year:string) => {
+//   console.log("Year: ",year);
+// }
 const Page = () => {
   const { register, handleSubmit, reset, formState:{isSubmitting, errors} } = useForm<FormData>();
   
