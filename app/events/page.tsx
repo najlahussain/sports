@@ -7,7 +7,7 @@ import { poppins, jakarta, archivo } from '../css/fonts';
 import { SanityData } from '../constants';
 import { urlForImage } from "@/sanity/lib/image";
 
-function Events ({data}:{data:SanityData[]}){
+function Events (data: any){
   const router = useRouter();
   return (
     <div className='text-white flex sm:flex-row flex-col sm:gap-16 mt-20 sm:mt-60'>
