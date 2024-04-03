@@ -4,7 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation';
 import { poppins, jakarta, archivo } from '../css/fonts';
-import { SanityData } from '../constants';
+// import { SanityData } from '../constants';
 import { urlForImage } from "@/sanity/lib/image";
 
 function Events (data: any){

@@ -1,5 +1,4 @@
 import React from 'react'
-import { salon_about } from "@/assets/img/index";
 import { archivo, poppins } from '@/app/css/fonts';
 import Image from 'next/image';
 import { urlForImage } from '@/sanity/lib/image';

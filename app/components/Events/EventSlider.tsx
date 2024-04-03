@@ -3,7 +3,6 @@
 import React from "react";
 import Card from "./Card";
 import Slider from "react-slick";
-import { archivo, revalia } from "@/app/css/fonts";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { PicturesData } from "@/app/constants";

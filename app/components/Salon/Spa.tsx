@@ -1,5 +1,4 @@
 import React from 'react'
-import { salon_spa1, salon_spa2, salon_spa3 } from "@/assets/img/index";
 import { archivo, poppins } from '@/app/css/fonts';
 import Image from 'next/image';
 import { SalonData } from '@/app/constants';

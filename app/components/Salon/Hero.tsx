@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import { goblin } from '@/app/css/fonts'
-import { salon_hero } from "@/assets/img/index";
 import { SalonData } from '@/app/constants';
 import { urlForImage } from '@/sanity/lib/image';
 

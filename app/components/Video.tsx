@@ -1,5 +1,4 @@
 import React from "react";
-import { goblin } from "../css/fonts";
 
 const Video = () => {
   return ( 

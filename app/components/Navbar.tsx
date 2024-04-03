@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { navLinks } from "../constants";
 
-import { logo, menu, close, arrow } from "@/assets/img/index";
+import { logo, menu, close} from "@/assets/img/index";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
