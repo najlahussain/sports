@@ -10,7 +10,7 @@ import { FormData } from '@/app/constants';
 export const getYear = (year:string) => {
   console.log("Year: ",year);
 }
-const page = () => {
+const Page = () => {
   const { register, handleSubmit, reset, formState:{isSubmitting, errors} } = useForm<FormData>();
   
   const onSubmit : SubmitHandler<FormData> = async (data: FormData) => {
@@ -64,4 +64,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
