@@ -2,13 +2,12 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { event_image } from "@/assets/img/index"
 import { useRouter } from 'next/navigation';
 import { poppins, jakarta, archivo } from '../css/fonts';
 import { SanityData } from '../constants';
 import { urlForImage } from "@/sanity/lib/image";
 
-const Events = ({data}:{data:SanityData[]}) => {
+function Events ({data}:{data:SanityData[]}){
   const router = useRouter();
   return (
     <div className='text-white flex sm:flex-row flex-col sm:gap-16 mt-20 sm:mt-60'>
