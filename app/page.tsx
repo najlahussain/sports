@@ -1,5 +1,4 @@
-import { Hero, Video, Facilities, AboutHome } from "./components/index";
-import Events from '@/app/events/page';
+import { Hero, Video, Facilities, AboutHome, Events } from "./components/index";
 import { SanityData } from "./constants";
 import { client } from '@/sanity/lib/client';
 export const revalidate = 60
@@ -21,7 +20,7 @@ export  default async function Home() {
   const aboutdata: SanityData[] = await client.fetch(query2);
   const facilitiesdata: SanityData[] = await client.fetch(query3);
   const eventsdata: SanityData[] = await client.fetch(query4);
-  console.log(eventsdata)
+ 
   return (
     <div className="bg-black relative">
       <Hero data={herodata} />
@@ -29,7 +28,7 @@ export  default async function Home() {
         <AboutHome data = {aboutdata}/>
         <Video />
         <Facilities data = {facilitiesdata}/>
-        <Events data={eventsdata}/>
+        <Events image = {eventsdata[0].image} description={eventsdata[0].description}/>
       </div>
     </div>
   );

@@ -4,10 +4,10 @@ import React from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation';
 import { poppins, jakarta, archivo } from '../css/fonts';
-import { SanityData } from '../constants';
 import { urlForImage } from "@/sanity/lib/image";
+import { SanityData } from '@/app/constants'
 
-function Events ({data}:{data:SanityData[]}){
+export default function Events({ image, description } : SanityData) {
   const router = useRouter();
   return (
     <div className='text-white flex sm:flex-row flex-col sm:gap-16 mt-20 sm:mt-60'>
@@ -16,7 +16,7 @@ function Events ({data}:{data:SanityData[]}){
           <div className='border-8 border-white w-[300px] sm:w-[668px] h-[300px] sm:h-[704px] rotate-12 ml-12 absolute'></div>
           <div className='border-8 border-white w-[300px] sm:w-[670px] h-[300px] sm:h-[700px] flex-shrink-0 ml-8'></div>
           <div>
-            <Image src={urlForImage(data[0].image)} alt='events image' width={200} height={200} className='w-[300px] sm:w-[636px] h-[300px] sm:h-[636px] flex-shrink-0 ml-14 -mt-[280px] sm:-mt-[670px] z-10'></Image>
+            <Image src={urlForImage(image)} alt='events image' width={200} height={200} className='w-[300px] sm:w-[636px] h-[300px] sm:h-[636px] flex-shrink-0 ml-14 -mt-[280px] sm:-mt-[670px] z-10'></Image>
           </div>
         </div>
         {/* <div className='hidden sm:flex bg-[#42FB14] w-[56px] h-[56px] rounded-full'></div> */}
@@ -34,7 +34,7 @@ function Events ({data}:{data:SanityData[]}){
         </div>
         <div className={poppins.className}>
           <p className='text-lg sm:text-[16px] leading-normal text-justify'>
-            {data[0].description}
+            {description}
           </p>
         </div>
         <button type = 'button' 
@@ -44,5 +44,3 @@ function Events ({data}:{data:SanityData[]}){
     </div>
   )
 }
-
-export default Events

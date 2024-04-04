@@ -40,7 +40,6 @@ export const navLinks = [
     image : any,
     title?: string,
     description?: string,
-    slug : any
   }
 
   export type AboutData = {

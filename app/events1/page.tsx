@@ -1,5 +1,5 @@
 import React from 'react'
-import { EventsHero, EventsText, EventsGallery, EventsTestimonials, EventsAppointment, EventSlider} from '../components/Events';
+import { EventsHero, EventsText, EventsGallery, EventsTestimonials, EventsAppointment, EventSlider} from '../components/Events/index';
 import { client } from '@/sanity/lib/client';
 import { EventsData, PicturesData } from '../constants';
 export const revalidate = 60
