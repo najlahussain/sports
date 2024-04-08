@@ -20,7 +20,7 @@ function Hero ({data}:{data:SanityData[]}) {
             <Link href="https://www.linkedin.com/company/sports-pavilion-rawalpindi/"><Image src = {LinkedIn} alt='linkedin'></Image></Link>
             <Link href="https://www.instagram.com/sportspavilion_rwp?igsh=MWIycjQ0MnYzbWM2aA=="><Image src = {Instagram} alt='instagram'></Image></Link>
           </div>
-          <p className="text-white text-xs whitespace-nowrap mb-28 sm:mb-20 -rotate-90">0348-8801548</p>
+          <p className="text-white text-xs whitespace-nowrap mb-28 sm:mb-20 -rotate-90">0348-0161623</p>
         </div>
         <div className="">
           {/* text ALL IN ONE */}

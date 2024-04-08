@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { sendEmail } from '@/utils/send-email';
 
-import { logo, Twitter, Facebook, LinkedIn, Instagram } from '@/assets/img'
+import { logo, Twitter, Facebook, LinkedIn, Instagram, tiktok } from '@/assets/img'
 
 import { FormData } from '@/app/constants';
 
@@ -33,10 +33,10 @@ const Footer1 = () => {
       </div>
       <div className='flex flex-col sm:flex-row justify-between items-center'>
       <div className="flex flex-row gap-2 ml-10 mt-3">
-            <div className='w-[56px] h-[56px] bg-black rounded-full flex items-center justify-center'><Link href="https://www.twitter.com"><Image src = {Twitter} alt='twitter'></Image></Link></div>
-            <div className='w-[56px] h-[56px] bg-black rounded-full flex items-center justify-center'><Link href="https://www.facebook.com"><Image src = {Facebook} alt='facebook'></Image></Link></div>
-            <div className='w-[56px] h-[56px] bg-black rounded-full flex items-center justify-center'><Link href="https://www.linkedin.com"><Image src = {LinkedIn} alt='linkedin'></Image></Link></div>
-            <div className='w-[56px] h-[56px] bg-black rounded-full flex items-center justify-center'><Link href="https://www.instagram.com"><Image src = {Instagram} alt='instagram'></Image></Link></div>
+            <div className='w-[38px] h-[38px] bg-black rounded-full flex items-center justify-center mt-2 invert'><Link href="https://www.tiktok.com/@hsg_ladiessalon?_t=8jiBTFsMK4g&_r=1"><Image src = {tiktok} alt='twitter'></Image></Link></div>
+            <div className='w-[56px] h-[56px] bg-black rounded-full flex items-center justify-center'><Link href="https://www.facebook.com/citywalkfoodpark?mibextid=dGKdO6"><Image src = {Facebook} alt='facebook'></Image></Link></div>
+            <div className='w-[56px] h-[56px] bg-black rounded-full flex items-center justify-center'><Link href="https://www.linkedin.com/company/sports-pavilion-rawalpindi/"><Image src = {LinkedIn} alt='linkedin'></Image></Link></div>
+            <div className='w-[56px] h-[56px] bg-black rounded-full flex items-center justify-center'><Link href="https://www.instagram.com/sportspavilion_rwp?igsh=MWIycjQ0MnYzbWM2aA=="><Image src = {Instagram} alt='instagram'></Image></Link></div>
         </div>  
         <div className='text-[#5D5D5D] text-[12px] sm:text-[16px] font-[400] leading-normal whitespace-nowrap'>
           <ul className='flex list-disc gap-20'>
