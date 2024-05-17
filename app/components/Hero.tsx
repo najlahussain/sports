@@ -20,18 +20,18 @@ function Hero ({data}:{data:SanityData[]}) {
             <Link href="https://www.linkedin.com/company/sports-pavilion-rawalpindi/"><Image src = {LinkedIn} alt='linkedin'></Image></Link>
             <Link href="https://www.instagram.com/sportspavilion_rwp?igsh=MWIycjQ0MnYzbWM2aA=="><Image src = {Instagram} alt='instagram'></Image></Link>
           </div>
-          <p className="text-white text-xs whitespace-nowrap mb-28 sm:mb-20 -rotate-90">0348-0161623</p>
+          <p className="text-white text-md whitespace-nowrap mb-28 sm:mb-20 -rotate-90">0348-0161623</p>
         </div>
         <div className="">
           {/* text ALL IN ONE */}
-          <Image src={hero_text} alt = "hero_text" className="sm:mt-28 -ml-10 sm:ml-10 sm:w-[265px] w-[180px] h-[100px] sm:h-[100px]"></ Image>
+          <Image src={hero_text} alt = "hero_text" className="sm:mt-28 -ml-10 sm:ml-5 sm:w-[265px] w-[180px] h-[100px] sm:h-[100px]"></ Image>
           <div className={goblin.className}>
-            <h1 className='text-white font-bold sm:font-extrabold text-6xl sm:text-[105px] sm:ml-20 -ml-8'>
+            <h1 className='text-white font-bold sm:font-extrabold text-6xl sm:text-[105px] sm:ml-10 -ml-8'>
             SPORTS</h1>
-            <h1 className="text-white font-bold sm:font-extrabold text-6xl sm:text-[105px] sm:ml-20 -ml-8 -mt-0 sm:-mt-5">
+            <h1 className="text-white font-bold sm:font-extrabold text-6xl sm:text-[105px] sm:ml-10 -ml-8 -mt-0 sm:-mt-5">
             PAVILION</h1>
           </div>
-          <div className="ml-[280px] sm:ml-[310px] w-20 sm:w-auto mt-8 sm:mt-0">
+          <div className="ml-[280px] w-20 sm:w-auto mt-8 sm:mt-0">
             <Image src={hero_button} alt="hero button" className="bg-transparent"></Image>
             <Link href='/about'><Image src={arrow} alt="arrow" className="-mt-16  sm:-mt-24 ml-3 sm:ml-8 rotate"></Image></Link>
           </div>

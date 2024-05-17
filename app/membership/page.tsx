@@ -26,6 +26,10 @@ const Page = () => {
         </p>
         <h1 className={`${archivo.className} font-bold text-4xl sm:text-6xl text-white`}>MEMBERSHIP</h1>
         <h1 className={`${archivo.className} font-bold text-4xl sm:text-6xl text-[#42FB14]`}>PLAN</h1>
+        <div className='flex justify-start'>
+        <a href="/membership.jpeg" download="membership tariff" className='bg-[#42FB14] w-[250px] h-[50px] text-black rounded-full font-bold px-10 py-3 text-md mt-10'>Membership Tariff</a>
+          {/* <button className='bg-[#42FB14] w-[250px] h-[50px] text-black rounded-full font-bold text-md'>Price List</button> */}
+        </div>
       </div>
       <div className='bg-white p-10 sm:p-0 sm:w-[665px] sm:h-[855px] flex flex-col items-center justify-center rounded-3xl'>
         <p className={`${poppins.className} mb-10 font-bold text-2xl text-black`}>I&apos;m interested in....</p>

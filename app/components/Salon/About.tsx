@@ -15,7 +15,7 @@ const About = ({data}:{data:SalonData[]}) => {
         <p className={`${poppins.className} text-white text-[12px] sm:text-[16px] leading-normal text-justify my-10 mr-10`}>{data[0].description}
         </p>
         <div className='flex justify-start'>
-        <a href="/test.pdf" download="price list" className='bg-[#42FB14] w-[250px] h-[50px] text-black rounded-full font-bold px-20 py-4 text-md'>Price List</a>
+        <a href="/salon.pdf" download="price list" className='bg-[#42FB14] w-[250px] h-[50px] text-black rounded-full font-bold px-20 py-4 text-md'>Price List</a>
           {/* <button className='bg-[#42FB14] w-[250px] h-[50px] text-black rounded-full font-bold text-md'>Price List</button> */}
         </div>
       </div> 
