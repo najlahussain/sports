@@ -11,7 +11,7 @@ const Services = ({data}:{data:SalonData[]}) => {
       <p className={`${revalia.className} text-xl sm:text-2xl text-center text-[#C36BBB]`}>WE HELP YOU OUT</p>
       <p className={`${poppins.className} text-xl sm:text-3xl text-center text-[#5C5B5B] mt-10`}>{data[0].services}</p>
       <div className='flex flex-row sm:m-20 justify justify-between'>
-        <div className='absolute sm:ml-10 mt-12 w-[400px] sm:w-[1100px] border-2 border-[#C36BBB]'></div>
+        <div className='absolute sm:ml-10 mt-12 w-[400px] md:w-[32rem] lg:w-[1100px] border-2 border-[#C36BBB]'></div>
         <div className='z-10'>
           <Image src={salon_icon2} alt="services" className='w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] z-10 mt-3 sm:mt-0'></Image>
           <p className={`${poppins.className} text-lg sm:text-3xl text-center text-[#5C5B5B] mt-2 sm:mt-5`}>Spa</p>
@@ -19,7 +19,6 @@ const Services = ({data}:{data:SalonData[]}) => {
         <div className='z-10'>
           <Image src={salon_icon5} alt="services" className='w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] z-10 mt-3 sm:mt-0'></Image>
           <p className={`${poppins.className} text-lg sm:text-3xl text-center text-[#5C5B5B] mt-2 sm:mt-5`}>Hair</p>
-          {/* <p className={`${poppins.className} sm:flex hidden text-lg sm:text-3xl text-center text-[#5C5B5B] mt-2 sm:mt-5`}>Hair&amp;&nbsp;Makeup</p> */}
         </div>
         <div className='z-10'>
           <Image src={salon_icon3} alt="services" className='w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] z-10 mt-3 sm:mt-0'></Image>
@@ -35,7 +34,7 @@ const Services = ({data}:{data:SalonData[]}) => {
         </div>
       </div>
       {/* white part */}
-      <div className='my-5 sm:my-0 mx-10 sm:mx-20 w-auto h-1/3 bg-white flex flex-col sm:flex-row justify-between items-center rounded-lg sm:p-0 pt-5'>
+      <div className='my-5 sm:my-0 mx-10 lg:mx-20 w-auto h-1/3 bg-white flex flex-col sm:flex-row justify-between items-center rounded-lg sm:p-0 pt-5'>
         <div className='flex flex-col gap-1'>
           <div className={`w-[252px] h-[45px] bg-[#92AD68] rounded-r-3xl hover:bg-[#C36BBB] hover:text-white transition-transform text-black flex flex-row items-center gap-10 ${poppins.className}`}>
             <Image src={pink_arrow} alt="services" className='w-[36px] h-[45px]'></Image>
@@ -63,10 +62,10 @@ const Services = ({data}:{data:SalonData[]}) => {
           </div>  
         </div>
         <div>
-          <Image src={salon_icon6} alt="services" className='w-[300px] h-[300px] p-1 sm:ml-14 sm:mt-0 mt-5'></Image>
+          <Image src={salon_icon6} alt="services" className='w-[300px] md:w-[40rem] lg:h-[28rem] h-[300px] md:h-52 p-1 md:ml-5 lg:ml-14 lg:mt-0 mt-5'></Image>
         </div>
         <div className='p-10 ml-10'>
-          <h2 className={`${goblin.className} text-4xl text-black`}>HAIR SHE GOES</h2>
+          <h2 className={`${goblin.className} text-xl lg:text-4xl text-black`}>HAIR SHE GOES</h2>
           <p className={`${poppins.className} text-sm text-[#555555]`}>We provide all sorts of top services. Because a happy client means happy environment.</p>
           <ul className={`${poppins.className} text-sm text-[#555555] list-disc`}>
             <li>Exclusive Discounts for Members</li>

@@ -7,16 +7,16 @@ import { ContactData } from '@/app/constants'
 
 const Contact = ({data}:{data:ContactData[]}) => {
   return (
-    <div className='flex flex-col mt-20 sm:mt-48 items-center'>
+    <div className='flex flex-col mt-20 lg:mt-48 items-center'>
       <div className='text-center'>
           <h1 className={`${archivo.className} font-bold text-4xl sm:text-6xl text-white`}>Contact us</h1>
           <p className={`${poppins.className} text-xl text-white`}>Home&nbsp;
           <span className='text-[#42FB14]'>&#92;&nbsp;Contact Us</span></p>
       </div>
-      <div className='flex flex-col sm:flex-row m-20 sm:m-44 gap-20 sm:gap-40'>
+      <div className='flex flex-col lg:flex-row m-20 lg:m-44 gap-20 lg:gap-40'>
         <div className='flex flex-col items-start'>
             <div className=''>
-                <h1 className={`${archivo.className} font-bold text-4xl sm:text-6xl text-white`}>Let&apos;s discuss <br />something&nbsp;
+                <h1 className={`${archivo.className} font-bold text-4xl lg:text-6xl text-white`}>Let&apos;s discuss <br />something&nbsp;
                 <span className='text-[#42FB14]'>cool&nbsp;</span><br />together</h1>
             </div>
             <div className='flex flex-row items-center mt-10 justify-center gap-5'>
@@ -27,7 +27,7 @@ const Contact = ({data}:{data:ContactData[]}) => {
         </div>
         <div className='flex flex-row gap-10'>
             <Image src={contact_img} alt='contact image' className='w-[35px] h-[192px]'></Image>
-            <div className={`${poppins.className} text-white flex flex-col gap-14`}>
+            <div className={`${poppins.className} text-white text:md md:text-xl flex flex-col gap-14`}>
                 <p>{data[0].email}</p>
                 <p>{data[0].phone}</p>
                 <div>

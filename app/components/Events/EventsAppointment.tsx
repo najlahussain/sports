@@ -20,7 +20,7 @@ const EventsAppointment: FC = () => {
   }
   return (
     <div>
-      <div className="absolute flex flex-col py-0 pl-4 sm:pt-32 sm:pl-[28rem] gap-10">
+      <div className="absolute flex flex-col py-0 pl-4 md:pt-20 lg:pt-32 md:pl-32 lg:pl-[28rem] gap-10">
         <div className='gap-3 flex flex-col text-center'>
           <h1 className={`text-white ${poppins.className} font-extrabold text-3xl`}>Make an Appointment</h1>
           <p className={`text-white ${poppins.className} font-thin text-md `}>Book us for your special event&#33;&#33;&#33;</p>

@@ -6,9 +6,9 @@ import { SalonData } from '@/app/constants';
 
 const About = ({data}:{data:SalonData[]}) => {
   return (
-    <div className='flex flex-col lg:flex-row mt-20 items-center justify-center sm:p-10 gap-10'>
-      <Image src={urlForImage(data[0].sideImage)} alt='about' width={200} height={200} className='w-80 h-72'></Image>
-      <div className='flex flex-col items-center justify-center sm:items-start p-10 sm:gap-5'>
+    <div className='flex flex-col lg:flex-row mt-20 items-center justify-center lg:p-10 gap-10'>
+      <Image src={urlForImage(data[0].sideImage)} alt='about' width={200} height={200} className='w-80 md:w-96 h-72 md:h-80'></Image>
+      <div className='flex flex-col items-center justify-center lg:items-start p-10 sm:gap-5'>
         <div className='bg-[#42FB14] size-2 rounded-full'></div>
         <h2 className={`${archivo.className} text-white text-sm font-thin leading-normal`}>WHAT WE&apos;RE OFFERING</h2>
         <h2 className={`${archivo.className} text-3xl sm:text-6xl text-[#42FB14] font-extrabold leading-normal`}>ABOUT US</h2>          

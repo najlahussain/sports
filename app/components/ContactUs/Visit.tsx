@@ -8,9 +8,9 @@ import { urlForImage } from '@/sanity/lib/image'
 
 const Visit = ({data}:{data:ContactData[]}) => {
   return (
-    <div className='bg-white w-full h-auto sm:h-[668px] flex flex-col sm:flex-row gap-20'>
-        <Image src={urlForImage(data[0].sideImage)} alt='visit image' width={200} height={200} className='w-full h-auto sm:h-[668px]'></Image>
-        <div className='flex flex-col mx-10 mb-10 sm:m-40'>
+    <div className='bg-white w-full h-auto lg:h-[668px] flex flex-col lg:flex-row gap-20'>
+        <Image src={urlForImage(data[0].sideImage)} alt='visit image' width={200} height={200} className='w-full h-auto lg:h-[668px]'></Image>
+        <div className='flex flex-col mx-10 mb-10 lg:m-40'>
             <h1 className={`${poppins.className} text-3xl`}>VISIT US</h1>
             <p className={`${poppins.className} text-lg text-justify mt-10`}>Visit us for a time of lifetime have fun and avail all our services to have a relaxing end of the day.</p>
             <ul className='mt-10'>

@@ -38,7 +38,7 @@ const Footer1 = () => {
             <div className='w-[56px] h-[56px] bg-black rounded-full flex items-center justify-center'><Link href="https://www.linkedin.com/company/sports-pavilion-rawalpindi/"><Image src = {LinkedIn} alt='linkedin'></Image></Link></div>
             <div className='w-[56px] h-[56px] bg-black rounded-full flex items-center justify-center'><Link href="https://www.instagram.com/sportspavilion_rwp?igsh=MWIycjQ0MnYzbWM2aA=="><Image src = {Instagram} alt='instagram'></Image></Link></div>
         </div>  
-        <div className='hidden sm:flex text-[#5D5D5D] text-[12px] sm:text-[16px] font-[400] leading-normal whitespace-nowrap'>
+        <div className='hidden lg:flex text-[#5D5D5D] text-[12px] sm:text-[16px] font-[400] leading-normal whitespace-nowrap'>
           <ul className='flex list-disc gap-20'>
             <li><Link href="/">Privacy Policy</Link></li>
             <li><Link href="/">Sports Pavilion</Link></li>

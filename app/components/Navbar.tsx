@@ -11,22 +11,22 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="text-white flex justify-around">
-      <ul className="hidden sm:flex list-disc gap-32 items-center">
+    <div className="text-white flex justify-around lg:w-auto">
+      <ul className="hidden md:flex list-disc md:gap-16 lg:gap-32 items-center">
         <li><Link href="/">Home</Link></li>
         <li><Link href="/about">About</Link></li>
         <li><Link href="/events">Events</Link></li>
       </ul>
-      <div className="w-[130px] sm:w-[230px] h-[100px] sm:h-[131px]">
+      <div className="w-[130px] lg:w-40 h-[100px] lg:h-[131px]">
         <Image src={logo} alt="logo"></Image>
       </div>
-      <ul className="hidden sm:flex list-disc gap-32 items-center">
+      <ul className="hidden md:flex list-disc md:gap-16 lg:gap-32 items-center">
         <li><Link href="/membership">Membership</Link></li>
         <li><Link href="/salon">Salon</Link></li>
         <li><Link href="/contact">Contact</Link></li>
       </ul>
       {/* burger menu */}
-      <div className="sm:hidden flex flex-1 justify-end items-center ">
+      <div className="md:hidden flex flex-1 justify-end items-center ">
           <Image
             src={toggle ? close : menu}
             alt="menu"

@@ -10,15 +10,15 @@ import { urlForImage } from "@/sanity/lib/image";
 const AboutHome = ({data}:{data:SanityData[]}) => {
   const router = useRouter();
   return (
-    <div className='text-white flex sm:flex-row flex-col gap-16 mt-20 sm:mt-40'>
-      <div className='flex flex-col items-center sm:items-start justify-center'>
+    <div className='text-white flex lg:flex-row flex-col gap-16 mt-20 lg:mt-40'>
+      <div className='flex flex-col items-center lg:items-start justify-center'>
         <div>
           <div className='border-4 border-white rounded-full size-72 sm:size-[32rem] flex-shrink-0'></div>
           <div>
             <Image src={urlForImage(data[0].image)} alt='about image' width={200} height={200} className='rounded-full  flex-shrink-0 size-72 sm:size-[32rem] -mt-72 sm:-mt-[32rem] ml-10'></Image>
           </div>
         </div>
-        <div className='hidden sm:flex bg-[#42FB14] size-12 rounded-full'></div>
+        <div className='hidden lg:flex bg-[#42FB14] size-12 rounded-full'></div>
       </div>
       <div className='flex flex-col sm:py-20 justify-center'>
         <div className='bg-[#42FB14] size-2 rounded-full'></div>

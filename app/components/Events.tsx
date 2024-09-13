@@ -10,7 +10,7 @@ import { SanityData } from '@/app/constants'
 export default function Events({ image, description } : SanityData) {
   const router = useRouter();
   return (
-    <div className='text-white flex sm:flex-row flex-col sm:gap-16 mt-20 sm:mt-56'>
+    <div className='text-white flex lg:flex-row flex-col lg:gap-16 mt-20 md:mt-36 lg:mt-56'>
       <div className='flex flex-col items-center sm:items-start justify-center'>
         <div>
           <div className='border-8 border-white size-72 sm:size-[32rem] rotate-12 ml-8 absolute'></div>
@@ -20,7 +20,7 @@ export default function Events({ image, description } : SanityData) {
           </div>
         </div>
       </div>
-      <div className='flex flex-col sm:px-0 px-10 sm:py-20 mt-20 sm:mt-72'>
+      <div className='flex flex-col lg:px-0 px-10 sm:py-20 mt-20 lg:mt-72'>
         <div className='flex items-center gap-3'>
         <div className='bg-[#42FB14] size-2 rounded-full'></div>
         <div className={jakarta.className}>

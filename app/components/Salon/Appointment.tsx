@@ -19,12 +19,12 @@ const Appointment = () => {
 
   return (
     <div className='max-w-full'>
-      <div className="absolute flex flex-col sm:py-32 px-0 sm:px-72 gap-2 sm:gap-10 sm:mt-0 mt-5">
-        <div className='gap-3 flex flex-col sm:text-center sm:ml-0 ml-5'>
+      <div className="absolute flex flex-col md:py-20 lg:py-32 px-0 md:px-10 lg:px-72 gap-2 lg:gap-10 lg:mt-0 mt-5">
+        <div className='gap-3 flex flex-col sm:text-center lg:ml-0 ml-5'>
           <h1 className={`text-white ${poppins.className} font-extrabold text-3xl`}>Make an Appointment</h1>
           <p className={`text-white ${poppins.className} font-thin text-md `}>Make an appointment to get stress free services&#33;</p>
           </div>
-          <div className='bg-white sm:w-[814px] h-[250px] sm:h-[278px] p-8 flex items-center justify-center'>
+          <div className='bg-white md:w-[43rem] lg:w-[814px] h-[250px] sm:h-[278px] p-8 flex items-center justify-center'>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className='flex flex-col gap-6 mt-10'>
               <div className='flex gap-10'> 

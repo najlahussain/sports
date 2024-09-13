@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
     
     auth: {
       user: 'marketing.spr@joyland.com.pk',
-      pass: 'Sprmkt786#',
+      pass: 'Rainbow@786#',
     },
   });
 

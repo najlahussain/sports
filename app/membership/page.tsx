@@ -20,7 +20,7 @@ const Page = () => {
   }
 
   return (
-    <div className='text-white flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-20 mt-10 sm:m-40'>
+    <div className='text-white flex flex-col lg:flex-row items-center justify-center gap-5 sm:gap-20 mt-10 sm:m-40'>
       <div className='text-start gap-10'>
         <p className={`${goblin.className} text-lg sm:text-xl text-[#42FB14]`}>BE OUR MEMBER
         </p>
