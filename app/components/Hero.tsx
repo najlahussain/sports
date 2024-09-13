@@ -24,16 +24,16 @@ function Hero ({data}:{data:SanityData[]}) {
         </div>
         <div className="">
           {/* text ALL IN ONE */}
-          <Image src={hero_text} alt = "hero_text" className="sm:mt-28 -ml-10 sm:ml-5 sm:w-[265px] w-[180px] h-[100px] sm:h-[100px]"></ Image>
+          <Image src={hero_text} alt = "hero_text" className="sm:mt-28 -ml-10 sm:ml-5 sm:w-[265px] w-[120px] h-[60px] sm:h-[100px]"></ Image>
           <div className={goblin.className}>
-            <h1 className='text-white font-bold sm:font-extrabold text-6xl sm:text-[105px] sm:ml-10 -ml-8'>
+            <h1 className='text-white font-bold sm:font-extrabold text-4xl sm:text-9xl sm:ml-10 -ml-8'>
             SPORTS</h1>
-            <h1 className="text-white font-bold sm:font-extrabold text-6xl sm:text-[105px] sm:ml-10 -ml-8 -mt-0 sm:-mt-5">
+            <h1 className="text-white font-bold sm:font-extrabold text-4xl sm:text-9xl sm:ml-10 -ml-8 -mt-0 sm:-mt-4">
             PAVILION</h1>
           </div>
-          <div className="ml-[280px] w-20 sm:w-auto mt-8 sm:mt-0">
+          <div className="hidden sm:flex ml-72">
             <Image src={hero_button} alt="hero button" className="bg-transparent"></Image>
-            <Link href='/about'><Image src={arrow} alt="arrow" className="-mt-16  sm:-mt-24 ml-3 sm:ml-8 rotate"></Image></Link>
+            <Link href='/about'><Image src={arrow} alt="arrow" className="rotate size-40 -ml-24"></Image></Link>
           </div>
         </div>
       </div>

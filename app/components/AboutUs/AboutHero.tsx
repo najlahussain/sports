@@ -8,7 +8,7 @@ const AboutHero = ({data}:{data:AboutData[]}) => {
   return (
     <div className="">
       <div className="absolute flex flex-row">
-        <h1 className={`text-white ${goblin.className} font-bold sm:font-extrabold text-4xl sm:text-7xl sm:text-[105px] absolute bg-black p-2 opacity-70 top-20 sm:top-44 sm:ml-20 ml-5`}>About</h1>
+        <h1 className={`text-white ${goblin.className} font-bold sm:font-extrabold text-4xl sm:text-7xl absolute bg-black p-2 opacity-70 top-20 sm:top-44 sm:ml-20 ml-5`}>About</h1>
       </div>
       <div className="flex justify-end">
         <div className="flex w-full h-[300px] sm:h-[634px]">

@@ -7,13 +7,22 @@ import { archivo, revalia } from "../css/fonts";
 import { SanityData } from "../constants";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useState } from "react";
 
 const Facilities = ({data}:{data:SanityData[]}) => {
+  
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
+    slidesToScroll: 1,
+  };
+  const settings1 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
     slidesToScroll: 1,
   };
 
@@ -30,6 +39,16 @@ const Facilities = ({data}:{data:SanityData[]}) => {
         </div>
       </div>
       <div className="mt-20">
+        <div className="">
+        <Slider {...settings}>
+          {data.map((facility) => (
+            <div key={facility.title}>
+              <Card id={facility.title} title={facility.title} text={facility.description} image={facility.image} />
+        </div>
+          ))}
+        </Slider>
+        </div>
+        {/* <div className="hidden sm:flex items-center justify-center">
         <Slider {...settings}>
           {data.map((facility) => (
             <div key={facility.title}>
@@ -37,6 +56,7 @@ const Facilities = ({data}:{data:SanityData[]}) => {
             </div>
           ))}
         </Slider>
+        </div> */}
       </div>
     </div>
   );

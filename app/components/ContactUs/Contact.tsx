@@ -7,7 +7,7 @@ import { ContactData } from '@/app/constants'
 
 const Contact = ({data}:{data:ContactData[]}) => {
   return (
-    <div className='flex flex-col mt-20 sm:mt-48'>
+    <div className='flex flex-col mt-20 sm:mt-48 items-center'>
       <div className='text-center'>
           <h1 className={`${archivo.className} font-bold text-4xl sm:text-6xl text-white`}>Contact us</h1>
           <p className={`${poppins.className} text-xl text-white`}>Home&nbsp;

@@ -20,7 +20,7 @@ const Footer1 = () => {
   }
   return (
     <div className='mt-20 w-full h-[251px] bottom-0'>
-      <div className=' flex justify-between'>
+      <div className='flex flex-col sm:flex-row justify-center sm:justify-between items-center'>
         <Image src={logo} alt="logo" className='mt-5 sm:ml-12 w-[130px] sm:w-[230px] h-[80px] sm:h-[131px]'/>
         <form onSubmit={handleSubmit(onSubmit)} className=''>
           <div className='flex w-[330px] sm:w-[388px] h-[40px] sm:h-[64px] mt-10 sm:mt-20 sm:mr-20 mr-2'>
@@ -32,13 +32,13 @@ const Footer1 = () => {
           </form>
       </div>
       <div className='flex flex-col sm:flex-row justify-between items-center'>
-      <div className="flex flex-row gap-2 ml-10 mt-3">
+      <div className="flex flex-row gap-2 ml-14 mt-3">
             <div className='w-[38px] h-[38px] bg-black rounded-full flex items-center justify-center mt-2 invert'><Link href="https://www.tiktok.com/@hsg_ladiessalon?_t=8jiBTFsMK4g&_r=1"><Image src = {tiktok} alt='twitter'></Image></Link></div>
             <div className='w-[56px] h-[56px] bg-black rounded-full flex items-center justify-center'><Link href="https://www.facebook.com/citywalkfoodpark?mibextid=dGKdO6"><Image src = {Facebook} alt='facebook'></Image></Link></div>
             <div className='w-[56px] h-[56px] bg-black rounded-full flex items-center justify-center'><Link href="https://www.linkedin.com/company/sports-pavilion-rawalpindi/"><Image src = {LinkedIn} alt='linkedin'></Image></Link></div>
             <div className='w-[56px] h-[56px] bg-black rounded-full flex items-center justify-center'><Link href="https://www.instagram.com/sportspavilion_rwp?igsh=MWIycjQ0MnYzbWM2aA=="><Image src = {Instagram} alt='instagram'></Image></Link></div>
         </div>  
-        <div className='text-[#5D5D5D] text-[12px] sm:text-[16px] font-[400] leading-normal whitespace-nowrap'>
+        <div className='hidden sm:flex text-[#5D5D5D] text-[12px] sm:text-[16px] font-[400] leading-normal whitespace-nowrap'>
           <ul className='flex list-disc gap-20'>
             <li><Link href="/">Privacy Policy</Link></li>
             <li><Link href="/">Sports Pavilion</Link></li>

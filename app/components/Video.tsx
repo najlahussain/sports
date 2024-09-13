@@ -4,10 +4,10 @@ const Video = () => {
   return ( 
     <div className="sm:mt-0 mt-20">
       {/* sports separator */}
-      <div className="sm:w-[1440px] text-white">
-        <h1 className="text-7xl sm:text-[247px] animated-text font-bold">SPORTS
+      <div className="w-screen text-white">
+        {/* <h1 className="text-7xl sm:text-[247px] animated-text font-bold">SPORTS
         <span className="text-[#42FB14]">&ndash;</span>
-        SPORTS PAVILION</h1>
+        SPORTS PAVILION</h1> */}
       </div>
       {/* video */}
       <div className="flex justify-center">

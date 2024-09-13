@@ -5,7 +5,7 @@ import { EventsData, PicturesData } from '../constants';
 export const revalidate = 60
 
 
-async function page () {
+async function Page () {
 
   const query = `*[_type=='eventspage']{
     image, description, galleryImage, test1Image, test1Name, test1desc,
@@ -32,4 +32,4 @@ async function page () {
   )
 }
 
-export default page;
+export default Page
